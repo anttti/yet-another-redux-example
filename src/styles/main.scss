@@ -1,0 +1,12 @@
+@import './normalize';
+@import './variables';
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,400);
+
+body {
+  background-color: $color--light;
+  color: $color--dark;
+  font-family: 'Raleway', sans-serif;
+}
+
+.app {
+}

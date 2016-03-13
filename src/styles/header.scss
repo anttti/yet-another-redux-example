@@ -1,0 +1,12 @@
+@import './variables';
+
+.app-header {
+  background: $color--dark;
+  color: $color--light;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+  .app-header__title {
+    font-size: 2rem;
+  }

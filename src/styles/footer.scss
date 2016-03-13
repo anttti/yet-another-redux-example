@@ -1,0 +1,12 @@
+@import './variables';
+
+.app-footer {
+  background: $color--dark;
+  color: $color--light;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+  .app-footer__title {
+    font-size: 2rem;
+  }
