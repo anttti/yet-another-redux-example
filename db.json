@@ -1,0 +1,28 @@
+{
+  "articles": [
+    {
+      "id": 0,
+      "title": "A New Hope",
+      "author": "George Lucas",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi mi, dignissim eget pellentesque non, condimentum et quam. Nam pharetra, diam sit amet imperdiet egestas, sem mauris aliquam magna, eu gravida purus nisi ut tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": 1,
+      "title": "The Empire Strikes Back",
+      "author": "Irvin Kershner",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi mi, dignissim eget pellentesque non, condimentum et quam. Nam pharetra, diam sit amet imperdiet egestas, sem mauris aliquam magna, eu gravida purus nisi ut tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": 2,
+      "title": "Return of the Jedi",
+      "author": "Richard Marquand",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi mi, dignissim eget pellentesque non, condimentum et quam. Nam pharetra, diam sit amet imperdiet egestas, sem mauris aliquam magna, eu gravida purus nisi ut tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": 3,
+      "title": "The Force Awakens",
+      "author": "J.J. Abrams",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi mi, dignissim eget pellentesque non, condimentum et quam. Nam pharetra, diam sit amet imperdiet egestas, sem mauris aliquam magna, eu gravida purus nisi ut tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
+  ]
+}

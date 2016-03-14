@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import ImmutablePropTypes from 'react-immutable-proptypes';
 import * as ArticleActions from 'actions/ArticleActions';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
@@ -23,7 +24,7 @@ class App extends Component {
 }
 
 App.propTypes = {
-  articles: PropTypes.array.isRequired,
+  articles: ImmutablePropTypes.list.isRequired,
   isLoading: PropTypes.bool.isRequired,
   actions: PropTypes.object.isRequired
 };

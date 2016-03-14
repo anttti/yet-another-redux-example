@@ -3,7 +3,6 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:100,400);
 
 body {
-  background-color: $color--light;
   color: $color--dark;
   font-family: 'Raleway', sans-serif;
 }
@@ -16,4 +15,5 @@ body {
 
 .app-content {
   flex: 1;
+  padding: 1rem;
 }

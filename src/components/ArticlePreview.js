@@ -6,7 +6,7 @@ const ArticlePreview = ({ title, author }) => {
   return (
     <section className="article-preview">
       <h1>{title}</h1>
-      <small>{author}</small>
+      <h3>{author}</h3>
     </section>
   );
 };
