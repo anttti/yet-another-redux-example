@@ -30,3 +30,11 @@ Now that your development server is up and running, you will see that you have y
 
 ***Change the DevTool panel's position during development:***
 <kbd>CTRL</kbd> + <kbd>Q</kbd>
+
+### Server
+
+There's no server in this repo. To run a quick mock server with the data this app expects, install [json-server](https://github.com/typicode/json-server) and run it:
+
+```
+json-server --watch db.json --port 3002
+```
