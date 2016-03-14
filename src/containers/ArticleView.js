@@ -1,8 +1,12 @@
+import 'styles/article.scss';
+
 import React, { Component, PropTypes } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import { Link } from 'react-router';
 import ImmutablePropTypes from 'react-immutable-proptypes';
 import * as ArticleActions from 'actions/Article';
+import LoadingSpinner from 'components/LoadingSpinner';
 
 class ArticleView extends Component {
   componentWillMount() {
@@ -11,7 +15,7 @@ class ArticleView extends Component {
 
   render() {
     if (this.props.isLoading) {
-      return <img src={require('../assets/loading.gif')} />;
+      return <LoadingSpinner />;
     }
     if (this.props.isError) {
       return <div>Error loading article!</div>;
@@ -20,11 +24,14 @@ class ArticleView extends Component {
       return <div></div>;
     }
     return (
-      <section>
-        <h1>{this.props.article.get('title')}</h1>
-        <h3>{this.props.article.get('author')}</h3>
-        <p>{this.props.article.get('body')}</p>
-      </section>
+      <div className="article">
+        <Link to="/" className="button">← Back</Link>
+        <section className="article__content">
+          <h1>{this.props.article.get('title')}</h1>
+          <h3>{this.props.article.get('author')}</h3>
+          <p>{this.props.article.get('body')}</p>
+        </section>
+      </div>
     );
   }
 }

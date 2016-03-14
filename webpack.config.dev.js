@@ -33,7 +33,8 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loader: 'style!css!sass'
+        // loader: 'style!css!sass'
+        loader: 'style-loader!css-loader?sourceMap!autoprefixer-loader?{browsers:["last 2 version", "IE >= 9"]}!sass-loader'
       },
       {
         test: /\.(png|jpg|gif)$/,

@@ -7,6 +7,36 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+a {
+  color: $color--dark;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.button {
+  padding: 0.2rem 0.4rem;
+  border: 1px solid lighten($color--dark, 50%);
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 80%;
+  appearance: none;
+  background: transparent;
+  outline: none;
+
+  &:hover {
+    background: darken($color--light, 10%);
+    text-decoration: none;
+  }
+
+  &:active {
+    color: $color--light;
+    background: $color--dark;
+  }
+}
+
 .app {
   display: flex;
   min-height: 100vh;

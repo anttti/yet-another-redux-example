@@ -2,10 +2,11 @@ import 'styles/articles.scss';
 
 import React from 'react';
 import ArticlePreview from 'components/ArticlePreview';
+import LoadingSpinner from 'components/LoadingSpinner';
 
 const Articles = ({ articles, isLoading }) => {
   if (isLoading) {
-    return <img src={require('../assets/loading.gif')} />;
+    return <LoadingSpinner />;
   }
   return (
     <ul className="article-list">

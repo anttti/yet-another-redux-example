@@ -10,7 +10,9 @@ class ListView extends Component {
     const { articles, isLoading, actions } = this.props;
     return (
       <div>
-        <button onClick={actions.requestArticles}>Fetch articles</button>
+        <button className="button" onClick={actions.requestArticles}>
+          Fetch articles
+        </button>
         <Articles articles={articles} isLoading={isLoading} />
       </div>
     );
