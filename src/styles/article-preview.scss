@@ -1,4 +1,10 @@
+@import "./variables";
+
 .article-preview {
   margin-bottom: 1rem;
   cursor: pointer;
 }
+
+  .article-preview__link {
+    color: $color--dark;
+  }

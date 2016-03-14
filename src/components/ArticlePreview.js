@@ -5,12 +5,12 @@ import { Link } from 'react-router';
 
 const ArticlePreview = ({ id, title, author }) => {
   return (
-    <Link to={`/article/${id}`}>
-      <section className="article-preview">
-        <h1>{title}</h1>
-        <h3>{author}</h3>
-      </section>
-    </Link>
+    <section className="article-preview">
+      <Link to={`/article/${id}`} className="article-preview__link">
+        <h1 className="article-preview__title">{title}</h1>
+      </Link>
+      <h3 className="article-preview__author">{author}</h3>
+    </section>
   );
 };
 
