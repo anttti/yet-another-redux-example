@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
-import { Router, Route } from 'react-router';
+import { Router, Route, IndexRoute } from 'react-router';
 import App from './App';
 import DevTools from './DevTools';
+import ListView from 'containers/ListView';
 import ArticleView from 'containers/ArticleView';
 
 /* eslint-disable react/prop-types */
@@ -14,6 +15,7 @@ module.exports = class Root extends Component {
         <div>
           <Router history={history}>
             <Route path="/" component={App}>
+              <IndexRoute component={ListView} />
               <Route path="article/:id" component={ArticleView} />
             </Route>
           </Router>

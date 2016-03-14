@@ -12,6 +12,7 @@ const Articles = ({ articles, isLoading }) => {
       {articles.map(article =>
         <ArticlePreview
           key={article.get('id')}
+          id={article.get('id')}
           title={article.get('title')}
           author={article.get('author')}
         />
