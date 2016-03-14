@@ -7,6 +7,7 @@ import { Link } from 'react-router';
 import ImmutablePropTypes from 'react-immutable-proptypes';
 import * as ArticleActions from 'actions/Article';
 import LoadingSpinner from 'components/LoadingSpinner';
+import Error from 'components/Error';
 
 class ArticleView extends Component {
   componentWillMount() {
@@ -18,7 +19,7 @@ class ArticleView extends Component {
       return <LoadingSpinner />;
     }
     if (this.props.isError) {
-      return <div>Error loading article!</div>;
+      return <Error message="Error loading article!"/>;
     }
     if (!this.props.article) {
       return <div></div>;

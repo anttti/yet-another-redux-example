@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
-import { Router, Route, IndexRoute } from 'react-router';
-import App from './App';
 import DevTools from './DevTools';
-import ListView from 'containers/ListView';
-import ArticleView from 'containers/ArticleView';
+import Routes from './Routes';
 
 /* eslint-disable react/prop-types */
 module.exports = class Root extends Component {
@@ -13,12 +10,7 @@ module.exports = class Root extends Component {
     return (
       <Provider store={store}>
         <div>
-          <Router history={history}>
-            <Route path="/" component={App}>
-              <IndexRoute component={ListView} />
-              <Route path="article/:id" component={ArticleView} />
-            </Route>
-          </Router>
+          <Routes history={history} />
           <DevTools />
         </div>
       </Provider>

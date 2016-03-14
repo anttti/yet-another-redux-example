@@ -3,10 +3,14 @@ import 'styles/articles.scss';
 import React from 'react';
 import ArticlePreview from 'components/ArticlePreview';
 import LoadingSpinner from 'components/LoadingSpinner';
+import Error from 'components/Error';
 
-const Articles = ({ articles, isLoading }) => {
+const Articles = ({ articles, isLoading, isError }) => {
   if (isLoading) {
     return <LoadingSpinner />;
+  }
+  if (isError) {
+    return <Error message="Error loading article list!" />;
   }
   return (
     <ul className="article-list">

@@ -7,13 +7,14 @@ import Articles from 'components/Articles';
 
 class ListView extends Component {
   render() {
-    const { articles, isLoading, actions } = this.props;
+    const { articles, isLoading, isError, actions } = this.props;
+    console.log(isLoading, isError)
     return (
       <div>
         <button className="button" onClick={actions.requestArticles}>
           Fetch articles
         </button>
-        <Articles articles={articles} isLoading={isLoading} />
+        <Articles articles={articles} isLoading={isLoading} isError={isError} />
       </div>
     );
   }
@@ -22,6 +23,7 @@ class ListView extends Component {
 ListView.propTypes = {
   articles: ImmutablePropTypes.list.isRequired,
   isLoading: PropTypes.bool.isRequired,
+  isError: PropTypes.bool.isRequired,
   actions: PropTypes.object.isRequired
 };
 

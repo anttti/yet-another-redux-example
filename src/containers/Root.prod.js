@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
-import App from 'components/App';
+import Routes from './Routes';
 
 /* eslint-disable react/prop-types */
 module.exports = class Root extends Component {
   render() {
-    const { store } = this.props;
+    const { store, history } = this.props;
     return (
       <Provider store={store}>
-        <App />
+        <div>
+          <Routes history={history} />
+        </div>
       </Provider>
     );
   }
