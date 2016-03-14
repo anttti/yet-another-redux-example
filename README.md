@@ -8,14 +8,14 @@ Based on [simple-redux-boilerplate](https://github.com/tsaiDavid/simple-redux-bo
 
 ### Usage
 
-Install required dependencies.
+Install required dependencies:
 ```
 npm install
 ```
 
-Run development server, complete with DevTools and related configuration.
+Run development server, complete with DevTools and related configuration:
 ```
-npm run dev
+npm start
 ```
 
 You're now ready to get working! *(enter command or visit via browser directly)*
@@ -30,6 +30,11 @@ Now that your development server is up and running, you will see that you have y
 
 ***Change the DevTool panel's position during development:***
 <kbd>CTRL</kbd> + <kbd>Q</kbd>
+
+Run tests:
+```
+npm run test
+```
 
 ### Server
 
