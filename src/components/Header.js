@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className="app-header">
       <h1 className="app-header__title">
-        All Star Wars Movies Ever Made
+        Every Star Wars Movie Ever Made
       </h1>
     </header>
   );

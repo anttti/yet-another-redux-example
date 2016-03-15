@@ -8,7 +8,6 @@ import Articles from 'components/Articles';
 class ListView extends Component {
   render() {
     const { articles, isLoading, isError, actions } = this.props;
-    console.log(isLoading, isError)
     return (
       <div>
         <button className="button" onClick={actions.requestArticles}>
