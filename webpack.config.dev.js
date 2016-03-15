@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
@@ -33,13 +34,18 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loader: 'style-loader!css-loader?sourceMap!autoprefixer-loader?{browsers:["last 2 version", "IE >= 9"]}!sass-loader'
+        loader: 'style-loader!css-loader?sourceMap!postcss-loader!sass-loader'
       },
       {
         test: /\.(png|jpg|gif)$/,
         loader: 'file'
       }
     ]
+  },
+  postcss: function() {
+    return [autoprefixer({
+      browsers:["last 2 version", "IE >= 9"]
+    })];
   },
   resolve: {
     extensions: ['', '.js'],
