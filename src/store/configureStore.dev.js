@@ -7,7 +7,7 @@ import DevTools from 'containers/DevTools';
 const logger = createLogger();
 
 const finalCreateStore = compose(
-  applyMiddleware(logger, thunk),
+  applyMiddleware(thunk, logger),
   DevTools.instrument()
 )(createStore);
 
